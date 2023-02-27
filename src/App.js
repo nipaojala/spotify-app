@@ -32,7 +32,6 @@ const App = () => {
     event.preventDefault()
     setSearch(event.target.value)
     setFilteredData(data.tracks.items.filter(element => element.track.name.toLowerCase().includes(search.toLowerCase())))
-  console.log(filteredData)
   }
   return (
     <div className='main'>
